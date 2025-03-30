@@ -27,6 +27,30 @@ goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
+// Blockly.Blocks['math_number'] = {
+//   /**
+//    * Block for adding two numbers.
+//    * @this Blockly.Block
+//    */
+//   init: function() {
+//     this.jsonInit({
+//       "message0": '%1',
+//       "args0": [
+//         {
+//           "type": "field_input",
+//           "name": "NUM",
+//           "text":"",
+//           "spellcheck":false
+//         }
+//       ],
+//       // "category": Blockly.Categories.operators,
+//       "output":'String',
+//       "extensions": ["output_number"],
+//       "colour":'#FFFFFF'
+//     });
+//   }
+// };
+
 
 Blockly.Blocks['operator_add'] = {
   /**

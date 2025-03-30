@@ -292,3 +292,39 @@ Blockly.Blocks['extension_music_play_note'] = {
     });
   }
 };
+
+// Blockly.Blocks['hello'] = {
+//   /**
+//    * @this Blockly.Block
+//    */
+//   init: function() {
+//     this.jsonInit({
+//       "message0": "%1 %2 play note %3 for %4 beats",
+//       // "category": Blockly.Categories.pen,
+//       // "extensions": ["colours_pen", "shape_statement", "scratch_extension"]
+//     });
+//   }
+// };
+
+Blockly.Blocks['strictlyEquals'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 strictly equals %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUMBER1"
+        },
+        {
+          "type": "input_value",
+          "name": "NUMBER2"
+        }
+      ],
+      // "category": Blockly.Categories.pen,
+      // "extensions": ["colours_pen", "shape_statement", "scratch_extension"]
+    });
+  }
+};

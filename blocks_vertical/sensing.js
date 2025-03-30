@@ -212,6 +212,26 @@ Blockly.Blocks['sensing_keypressed'] = {
   }
 };
 
+Blockly.Blocks['sensing_keyup'] = {
+  /**
+   * Block to Report if a key is up.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": '松开%1键?',
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "KEY_OPTION"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_boolean"]
+    });
+  }
+};
+
 Blockly.Blocks['sensing_keyoptions'] = {
   /**
    * Options for Keys

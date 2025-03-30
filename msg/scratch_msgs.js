@@ -22494,6 +22494,7 @@ Blockly.ScratchMsgs.locales["zh-cn"] =
     "LOOKS_NEXTBACKDROP": "下一个背景",
     "LOOKS_PREVIOUSBACKDROP": "上一个背景",
     "LOOKS_RANDOMBACKDROP": "随机背景",
+    "MOTION_MOVE": "移动 %1 ",
     "MOTION_MOVESTEPS": "移动 %1 步",
     "MOTION_TURNLEFT": "左转 %1 %2 度",
     "MOTION_TURNRIGHT": "右转 %1 %2 度",

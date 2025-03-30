@@ -50,6 +50,7 @@ goog.require('Blockly.FieldTextDropdown');
 goog.require('Blockly.FieldNumber');
 goog.require('Blockly.FieldNumberDropdown');
 goog.require('Blockly.FieldMatrix');
+goog.require('Blockly.FieldMatrixCustom')
 goog.require('Blockly.FieldVariable');
 goog.require('Blockly.FieldVerticalSeparator');
 goog.require('Blockly.Generator');
@@ -64,6 +65,8 @@ goog.require('Blockly.constants');
 goog.require('Blockly.inject');
 goog.require('Blockly.utils');
 goog.require('goog.color');
+goog.require('Blockly.FlyoutButton');
+
 
 
 // Turn off debugging when compiled.
@@ -616,4 +619,3 @@ if (!goog.global['Blockly']) {
   goog.global['Blockly'] = {};
 }
 goog.global['Blockly']['getMainWorkspace'] = Blockly.getMainWorkspace;
-goog.global['Blockly']['goog'] = goog;

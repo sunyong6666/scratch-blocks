@@ -233,11 +233,20 @@ Blockly.Blocks['control_wait'] = {
   init: function() {
     this.jsonInit({
       "id": "control_wait",
-      "message0": Blockly.Msg.CONTROL_WAIT,
+      "message0": '等待 %1 %2',
       "args0": [
         {
           "type": "input_value",
-          "name": "DURATION"
+          "name": "DURATION",
+          "check": "Number"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SECOND",
+          "options": [
+            ["秒", "s"],
+            ["毫秒", "ms"]
+          ]
         }
       ],
       "category": Blockly.Categories.control,

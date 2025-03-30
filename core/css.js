@@ -503,6 +503,10 @@ Blockly.Css.CONTENT = [
     'fill: none;',
     'pointer-events: all;',
   '}',
+   // 鼠标悬浮在 flyout 区域时，显示因太长而被裁剪掉的积木
+   '.blocklyFlyout:hover {',
+    'overflow: visible;',
+  '}',
 
   '.blocklyFlyoutButtonBackground {',
     'stroke: $colour_buttonBorder;',

@@ -35,10 +35,17 @@ goog.require('Blockly.Blocks');
 
 Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: none">' +
   '<category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '<block type="motion_move" id="motion_move">' +
+      '<value name="MOVE">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">30</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
     '<block type="motion_movesteps" id="motion_movesteps">' +
       '<value name="STEPS">' +
         '<shadow type="math_number">' +
-          '<field name="NUM">10</field>' +
+          '<field name="NUM">30</field>' +
         '</shadow>' +
       '</value>' +
     '</block>' +
@@ -565,5 +572,15 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
+  '</category>' +
+  '<category name="demo" id="demo" colour="#FF6680" secondaryColour="#FF4D6A" ' +
+    'iconURI="../media/extensions/wedo2-block-icon.svg" showStatusButton="true">' +
+    '<block type="motion_move" id="motion_move">' +
+      '<value name="MOVE">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">1</field>' +
+        '</shadow>' +
+      '</value>' +
+      '</block>' +
   '</category>' +
   '</xml>';
